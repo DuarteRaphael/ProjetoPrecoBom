@@ -30,6 +30,7 @@ Observações Técnicas
  O sistema atua exclusivamente como ferramenta de consulta e comparação.
  Não há transações financeiras ou intermediação de vendas.
  A plataforma prioriza a confiabilidade das informações e a experiência do usuário.
+
 6. Conclusão
 O Projeto Bom Preço representa uma solução inovadora para consumidores que buscam
 otimizar seus gastos e aumentar sua consciência financeira. Ao oferecer uma interface
