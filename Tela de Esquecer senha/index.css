@@ -1,4 +1,4 @@
-/* Configurações Globais */
+/* Configurações Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +7,14 @@
 }
 
 body {
-    background-color: #f4f7f6;
+    background-color: #f0f7f4; /* Verde bem claro de fundo */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-/* Card Principal */
+/* Container do Card */
 .container {
     width: 100%;
     max-width: 400px;
@@ -22,26 +22,28 @@ body {
 }
 
 .forgot-card {
-    background: #ffffff;
+    background-color: #ffffff;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+/* Textos */
 h2 {
-    color: #333;
+    color: #2d5a27; /* Verde Escuro */
     margin-bottom: 15px;
+    font-size: 24px;
 }
 
 p {
     color: #666;
-    font-size: 0.9rem;
+    font-size: 14px;
     line-height: 1.5;
     margin-bottom: 25px;
 }
 
-/* Formulário e Inputs */
+/* Formulário */
 .input-group {
     text-align: left;
     margin-bottom: 20px;
@@ -49,54 +51,53 @@ p {
 
 label {
     display: block;
-    font-size: 0.85rem;
+    color: #2d5a27;
     font-weight: 600;
-    color: #555;
     margin-bottom: 8px;
+    font-size: 14px;
 }
 
-input {
+input[type="email"] {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
     transition: border-color 0.3s;
 }
 
-input:focus {
-    outline: none;
-    border-color: #3498db;
+input[type="email"]:focus {
+    border-color: #4CAF50; /* Verde Principal no foco */
 }
 
 /* Botão */
 .btn-reset {
     width: 100%;
-    padding: 12px;
-    background-color: #3498db;
+    background-color: #4CAF50; /* Verde Principal */
     color: white;
+    padding: 12px;
     border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: 600;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
 .btn-reset:hover {
-    background-color: #2980b9;
+    background-color: #45a049; /* Verde um pouco mais escuro no hover */
 }
 
-/* Link de Rodapé */
+/* Rodapé/Links */
 .footer {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .footer a {
+    color: #4CAF50;
     text-decoration: none;
-    color: #3498db;
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .footer a:hover {
