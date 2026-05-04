@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparador de Preços</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Decorative background elements -->
+  <div class="bg-decoration bg-decoration-top"></div>
+  <div class="bg-decoration bg-decoration-bottom"></div>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="header-title">
+          <span class="header-icon">🛒</span>
+          <h1>Pague Menos No Supermercado</h1>
+        </div>
+        <p class="header-subtitle">Compare preços e economize nas suas compras</p>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Search Section -->
+      <div class="search-section">
+        <div class="search-bar">
+          <div class="search-glow"></div>
+          <div class="search-input-container">
+            <span class="search-icon">🔍</span>
+            <input 
+              type="text" 
+              id="searchInput" 
+              placeholder="Pesquisar produto..."
+              class="search-input"
+            >
+          </div>
+        </div>
+
+        <!-- CEP Section -->
+        <div class="cep-section">
+          <div class="cep-container">
+            <input 
+              type="text" 
+              id="cepInput" 
+              placeholder="Digite seu CEP"
+              class="cep-input"
+              maxlength="9"
+            >
+            <button id="btnBuscarCep" class="btn-cep">
+              Buscar mercados próximos
+            </button>
+          </div>
+          <p id="localizacao" class="localizacao"></p>
+        </div>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="category-filter" id="categoryFilter">
+        <button class="category-btn active" data-category="todos">
+          <span class="category-icon">🛍️</span>
+          Todos
+        </button>
+        <button class="category-btn" data-category="mercado">
+          <span class="category-icon">🍎</span>
+          Comida
+        </button>
+        <button class="category-btn" data-category="limpeza">
+          <span class="category-icon">🧹</span>
+          Limpeza
+        </button>
+        <button class="category-btn" data-category="favoritos">
+          <span class="category-icon">❤️</span>
+          Favoritos
+          <span class="favorites-count" id="favoritesCount"></span>
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productList"></div>
+
+      <!-- No Products Message -->
+      <div class="no-products" id="noProducts" style="display: none;">
+        <p>Nenhum produto encontrado 😢</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>🛒 Preço Bom</h3>
+        <p class="footer-description">
+          Projeto desenvolvido para ajudar consumidores a economizar comparando preços entre supermercados.
+        </p>
+        <p>Email: contato@comparador.com</p>
+        <p>Telefone: (21) 9805-0730</p>
+        <p class="footer-copyright">© 2026 Preço Bom</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
