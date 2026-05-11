@@ -2,10 +2,11 @@
 const produtos = [
   {
     id: 1,
+    cep: 21520001,
     nome: 'Arroz Branco 5kg',
     categoria: 'mercado',
     precos: [
-      { mercado: 'Guanabara', preco: 24.90 },
+      { mercado: 'Guanabara', preco: 2488.90 },
       { mercado: 'Extra', preco: 26.50 },
       { mercado: 'Pão de Açúcar', preco: 27.90 }
     ],
@@ -13,11 +14,12 @@ const produtos = [
   },
   {
     id: 2,
+    cep: 20931002,
     nome: 'Feijão Preto 1kg',
     categoria: 'mercado',
     precos: [
-      { mercado: 'Guanabara', preco: 8.90 },
-      { mercado: 'Extra', preco: 9.20 },
+      { mercado: 'Guanabara', preco: 11.90 },
+      { mercado: 'Extra', preco: 12.20 },
       { mercado: 'Pão de Açúcar', preco: 9.50 }
     ],
     imagem: '🫘'
@@ -208,6 +210,9 @@ async function buscarCep() {
     link.href = linkMaps;
     link.textContent = '📍 Ver mercados no Google Maps';
 
+
+    renderProducts(cep);
+
   } catch (error) {
     localizacao.textContent = 'Erro ao buscar o CEP.';
     console.error(error);
@@ -219,6 +224,7 @@ function createProductCard(product, index) {
   const isFavorite = state.favorites.includes(product.id);
   
   // Encontrar melhor preço
+  //Regra do negócio joga o menor 
   const melhorPreco = product.precos.reduce((min, p) => p.preco < min.preco ? p : min);
   const economiaMax = Math.max(...product.precos.map(p => p.preco)) - melhorPreco.preco;
   
@@ -263,21 +269,31 @@ function createProductCard(product, index) {
 }
 
 // Filtrar produtos
-function filterProducts() {
-  return produtos.filter(product => {
-    const matchesSearch = product.nome.toLowerCase().includes(state.searchTerm.toLowerCase());
-    const matchesCategory =
-      state.selectedCategory === 'todos' ? true :
-      state.selectedCategory === 'favoritos' ? state.favorites.includes(product.id) :
-      product.categoria === state.selectedCategory;
+// function filterProducts() {
+//   return produtos.filter(product => {
+//     const matchesSearch = product.nome.toLowerCase().includes(state.searchTerm.toLowerCase());
+//     const matchesCategory =
+//       state.selectedCategory === 'todos' ? true :
+//       state.selectedCategory === 'favoritos' ? state.favorites.includes(product.id) :
+//       product.categoria === state.selectedCategory;
 
-    return matchesSearch && matchesCategory;
+//     return matchesSearch && matchesCategory;
+//   });
+
+
+//   var produto =  produtos.filter(p =>p.cep== "cepInput")
+// }
+
+
+//nova função para listar o produto e exibir só os que estiver com o CEP igual ao que está no input
+function filterProducts(cep) {
+  return produtos.filter(p => {
+    return p.cep && String(p.cep) === String(cep);
   });
 }
-
 // Renderizar produtos
-function renderProducts() {
-  const filteredProducts = filterProducts();
+function renderProducts(cep) {
+  const filteredProducts = filterProducts(cep); // Imprime a lista de produtos na tela.
   
   productList.innerHTML = '';
   
