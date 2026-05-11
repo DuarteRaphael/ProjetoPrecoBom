@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     // Validação
     if (usuarioDigitado === usuarioCorreto && senhaDigitada === senhaCorreta) {
-        window.location.href = "../pagina inicial/index.html"; // Redireciona
+        window.location.href = "../pagina inicial/pagina_inicial.html"; // Redireciona
     } else {
         alert("Usuário ou senha incorretos.");
     }
