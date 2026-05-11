@@ -334,5 +334,5 @@ categoryButtons.forEach(button => {
 });
 
 // Inicializar
-renderProducts();
+// renderProducts();
 updateFavoritesCount();
