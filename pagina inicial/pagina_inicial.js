@@ -6,7 +6,7 @@ const produtos = [
     nome: 'Arroz Branco 5kg',
     categoria: 'mercado',
     precos: [
-      { mercado: 'Guanabara', preco: 2488.90 },
+      { mercado: 'Guanabara', preco: 24.90 },
       { mercado: 'Extra', preco: 26.50 },
       { mercado: 'Pão de Açúcar', preco: 27.90 }
     ],
@@ -18,14 +18,15 @@ const produtos = [
     nome: 'Feijão Preto 1kg',
     categoria: 'mercado',
     precos: [
-      { mercado: 'Guanabara', preco: 11.90 },
-      { mercado: 'Extra', preco: 12.20 },
+      { mercado: 'Guanabara', preco: 8.90 },
+      { mercado: 'Extra', preco: 9.20 },
       { mercado: 'Pão de Açúcar', preco: 9.50 }
     ],
     imagem: '🫘'
   },
   {
     id: 3,
+    cep: 20931002,
     nome: 'Óleo de Soja 900ml',
     categoria: 'mercado',
     precos: [
@@ -37,6 +38,7 @@ const produtos = [
   },
   {
     id: 4,
+    cep: 20931002,
     nome: 'Açúcar Cristal 1kg',
     categoria: 'mercado',
     precos: [
@@ -48,6 +50,7 @@ const produtos = [
   },
   {
     id: 5,
+    cep: 20931002,
     nome: 'Café em Pó 500g',
     categoria: 'mercado',
     precos: [
@@ -59,6 +62,7 @@ const produtos = [
   },
   {
     id: 6,
+    cep: 20931002,
     nome: 'Leite Integral 1L',
     categoria: 'mercado',
     precos: [
@@ -70,6 +74,7 @@ const produtos = [
   },
   {
     id: 7,
+    cep: 21520001,
     nome: 'Detergente Líquido',
     categoria: 'limpeza',
     precos: [
@@ -81,6 +86,7 @@ const produtos = [
   },
   {
     id: 8,
+    cep: 21520001,
     nome: 'Sabão em Pó 1kg',
     categoria: 'limpeza',
     precos: [
@@ -92,6 +98,7 @@ const produtos = [
   },
   {
     id: 9,
+    cep: 21520001,
     nome: 'Água Sanitária 1L',
     categoria: 'limpeza',
     precos: [
@@ -103,6 +110,7 @@ const produtos = [
   },
   {
     id: 10,
+    cep: 21520001,
     nome: 'Papel Higiênico 12un',
     categoria: 'limpeza',
     precos: [
@@ -111,7 +119,272 @@ const produtos = [
       { mercado: 'Pão de Açúcar', preco: 20.20 }
     ],
     imagem: '🧻'
-  }
+  },
+  {
+  id: 11,
+  cep: 21520001,
+  nome: "Água Mineral 5L",
+  categoria: "mercado",
+  precos: [
+    { "mercado": "Guanabara", "preco": 17.90 },
+    { "mercado": "Extra", "preco": 14.20 },
+    { "mercado": "Pão de Açúcar", "preco": 23.50 }
+  ],
+  "imagem": '🛢️'
+},
+{
+  id: 12,
+  cep: 21520001,
+  nome: "Detergente Líquido 500ml",
+  categoria: "Limpeza",
+  precos: [
+    { "mercado": "Guanabara", "preco": 2.50 },
+    { "mercado": "Extra", "preco": 2.70 },
+    { "mercado": "Pão de Açúcar", "preco": 3.00 }
+  ],
+  "imagem": "🧴"
+},
+{
+  id: 13,
+  cep: 21520001,
+  nome: 'Lustra Móveis 500ml',
+  categoria: 'Limpeza',
+  precos: [
+    { mercado: 'Guanabara', preco: 8.90 },
+    { mercado: 'Extra', preco: 9.20 },
+    { mercado: 'Pão de Açúcar', preco: 9.80 }
+  ],
+  imagem: '🪑'
+},
+{
+  id: 14,
+  cep: 21520001,
+  nome: 'Desinfetante 2L',
+  categoria: 'Limpeza',
+  precos: [
+    { mercado: 'Guanabara', preco: 6.50 },
+    { mercado: 'Extra', preco: 6.90 },
+    { mercado: 'Pão de Açúcar', preco: 7.20 }
+  ],
+  imagem: '🧴'
+},
+{
+  id: 15,
+  cep: 21520001,
+  nome: 'Sabão Líquido 3L',
+  categoria: 'Limpeza',
+  precos: [
+    { mercado: 'Guanabara', preco: 18.90 },
+    { mercado: 'Extra', preco: 19.50 },
+    { mercado: 'Pão de Açúcar', preco: 20.00 }
+  ],
+  imagem: '🧼'
+},
+{
+  id: 16,
+  cep: 21520001,
+  nome: 'Amaciante 2L',
+  categoria: 'Limpeza',
+  precos: [
+    { mercado: 'Guanabara', preco: 12.90 },
+    { mercado: 'Extra', preco: 13.50 },
+    { mercado: 'Pão de Açúcar', preco: 14.00 }
+  ],
+  imagem: '🧴'
+},
+{
+  id: 17,
+  cep: 21520001,
+  nome: 'Multiuso Spray 500ml',
+  categoria: 'Limpeza',
+  precos: [
+    { mercado: 'Guanabara', preco: 7.20 },
+    { mercado: 'Extra', preco: 7.50 },
+    { mercado: 'Pão de Açúcar', preco: 8.00 }
+  ],
+  imagem: '🧪'
+},
+{
+  id: 18,
+  cep: 21041020,
+  nome: 'Saco de Lixo 30L',
+  categoria: 'Limpeza',
+  precos: [
+    { mercado: 'Guanabara', preco: 9.90 },
+    { mercado: 'Extra', preco: 10.20 },
+    { mercado: 'Pão de Açúcar', preco: 10.80 }
+  ],
+  imagem: '🗑️'
+},
+{
+  id: 19,
+  cep: 21041020,
+  nome: 'Pano de Chão 2un',
+  categoria: 'Limpeza',
+  precos: [
+    { mercado: 'Guanabara', preco: 5.50 },
+    { mercado: 'Extra', preco: 5.90 },
+    { mercado: 'Pão de Açúcar', preco: 6.20 }
+  ],
+  imagem: '🧹'
+},
+{
+  id: 20,
+  cep: 21041020,
+  nome: 'Sabonete Antibacteriano 90g',
+  categoria: 'Limpeza',
+  precos: [
+    { mercado: 'Guanabara', preco: 2.90 },
+    { mercado: 'Extra', preco: 3.20 },
+    { mercado: 'Pão de Açúcar', preco: 3.50 }
+  ],
+  imagem: '🧼'
+},
+{
+  id: 21,
+  cep: 21041020,
+  nome: 'Álcool 70% 1L',
+  categoria: 'Limpeza',
+  precos: [
+    { mercado: 'Guanabara', preco: 8.50 },
+    { mercado: 'Extra', preco: 8.90 },
+    { mercado: 'Pão de Açúcar', preco: 9.20 }
+  ],
+  imagem: '🍶'
+},
+{
+  id: 22,
+  cep: 21041020,
+  nome: 'Removedor 1L',
+  categoria: 'Limpeza',
+  precos: [
+    { mercado: 'Guanabara', preco: 7.90 },
+    { mercado: 'Extra', preco: 8.20 },
+    { mercado: 'Pão de Açúcar', preco: 8.70 }
+  ],
+  imagem: '🧪'
+},
+{
+  id: 23,
+  cep: 21041020,
+  nome: 'Café Torrado 500g',
+  categoria: 'Comida',
+  precos: [
+    { mercado: 'Guanabara', preco: 14.90 },
+    { mercado: 'Extra', preco: 15.50 },
+    { mercado: 'Pão de Açúcar', preco: 16.00 }
+  ],
+  imagem: '☕'
+},
+{
+  id: 24,
+  cep: 21041020,
+  nome: 'Açúcar Refinado 1kg',
+  categoria: 'Comida',
+  precos: [
+    { mercado: 'Guanabara', preco: 4.50 },
+    { mercado: 'Extra', preco: 4.80 },
+    { mercado: 'Pão de Açúcar', preco: 5.20 }
+  ],
+  imagem: '🍬'
+},
+{
+  id: 25,
+  cep: 21041020,
+  nome: 'Farinha de Trigo 1kg',
+  categoria: 'Comida',
+  precos: [
+    { mercado: 'Guanabara', preco: 5.20 },
+    { mercado: 'Extra', preco: 5.50 },
+    { mercado: 'Pão de Açúcar', preco: 6.00 }
+  ],
+  imagem: '🥖'
+},
+{
+  id: 26,
+  cep: 21041020,
+  nome: 'Molho de Tomate 340g',
+  categoria: 'Comida',
+  precos: [
+    { mercado: 'Guanabara', preco: 3.90 },
+    { mercado: 'Extra', preco: 4.20 },
+    { mercado: 'Pão de Açúcar', preco: 4.50 }
+  ],
+  imagem: '🍅'
+},
+{
+  id: 27,
+  cep: 21041020,
+  nome: 'Queijo Mussarela 500g',
+  categoria: 'Comida',
+  precos: [
+    { mercado: 'Guanabara', preco: 22.90 },
+    { mercado: 'Extra', preco: 23.50 },
+    { mercado: 'Pão de Açúcar', preco: 24.20 }
+  ],
+  imagem: '🧀'
+},
+{
+  id: 28,
+  cep: 21041020,
+  nome: 'Presunto Fatiado 200g',
+  categoria: 'Comida',
+  precos: [
+    { mercado: 'Guanabara', preco: 9.90 },
+    { mercado: 'Extra', preco: 10.20 },
+    { mercado: 'Pão de Açúcar', preco: 10.80 }
+  ],
+  imagem: '🥓'
+},
+{
+  id: 29,
+  cep: 21041020,
+  nome: 'Iogurte Natural 170g',
+  categoria: 'Comida',
+  precos: [
+    { mercado: 'Guanabara', preco: 2.50 },
+    { mercado: 'Extra', preco: 2.70 },
+    { mercado: 'Pão de Açúcar', preco: 3.00 }
+  ],
+  imagem: '🥛'
+},
+{
+  id: 30,
+  cep: 21041020,
+  nome: 'Manteiga 200g',
+  categoria: 'Comida',
+  precos: [
+    { mercado: 'Guanabara', preco: 8.90 },
+    { mercado: 'Extra', preco: 9.20 },
+    { mercado: 'Pão de Açúcar', preco: 9.80 }
+  ],
+  imagem: '🧈'
+},
+{
+  id: 31,
+  cep: 21041020,
+  nome: 'Peito de Frango 1kg',
+  categoria: 'Comida',
+  precos: [
+    { mercado: 'Guanabara', preco: 16.90 },
+    { mercado: 'Extra', preco: 17.50 },
+    { mercado: 'Pão de Açúcar', preco: 18.20 }
+  ],
+  imagem: '🍗'
+},
+{
+  id: 32,
+  cep: 21041020,
+  nome: 'Carne Moída 1kg',
+  categoria: 'Comida',
+  precos: [
+    { mercado: 'Guanabara', preco: 29.90 },
+    { mercado: 'Extra', preco: 30.50 },
+    { mercado: 'Pão de Açúcar', preco: 31.20 }
+  ],
+  imagem: '🥩'
+}
+
 ];
 
 // Estado da aplicação
