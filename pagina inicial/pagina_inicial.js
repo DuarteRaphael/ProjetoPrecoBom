@@ -513,9 +513,6 @@ function createProductCard(product, index) {
   
   card.innerHTML = `
     <div class="product-header ${gradientClass}">
-      <button class="favorite-btn" onclick="toggleFavorite(${product.id})">
-        ${isFavorite ? '❤️' : '🤍'}
-      </button>
       <div class="product-emoji">${product.imagem}</div>
       <div class="product-name">${product.nome}</div>
     </div>
